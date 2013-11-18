@@ -39,4 +39,3 @@
 * to run all tests:
 
 	npm test
-
