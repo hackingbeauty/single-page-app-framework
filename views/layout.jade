@@ -1,0 +1,39 @@
+!!! 5
+html
+  head
+    //
+       ie9+ rendering support for latest standards 
+    meta(http-equiv='Content-Type', content='text/html; charset=ISO-8859-1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title SPA Chapter 8
+    //
+       third-party stylesheets 
+    //
+       our stylesheets 
+    link(rel='stylesheet', href='stylesheets/spa.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/spa.shell.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/spa.chat.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/spa.avtr.css', type='text/css')
+    //
+       third-party javascript 
+    script(src='socket.io/socket.io.js')
+    script(src='javascripts/jq/taffydb-2.6.2.js')
+    script(src='javascripts/jq/jquery-1.9.1.js')
+    script(src='javascripts/jq/jquery.uriAnchor-1.1.3.js')
+    script(src='javascripts/jq/jquery.event.gevent-0.1.9.js')
+    script(src='javascripts/jq/jquery.event.ue-0.3.2.js')
+    //
+       our javascript 
+    script(src='javascripts/spa.js')
+    script(src='javascripts/spa.util.js')
+    script(src='javascripts/spa.data.js')
+    script(src='javascripts/spa.fake.js')
+    script(src='javascripts/spa.model.js')
+    script(src='javascripts/spa.util_b.js')
+    script(src='javascripts/spa.shell.js')
+    script(src='javascripts/spa.chat.js')
+    script(src='javascripts/spa.avtr.js')
+    script
+      $(function () { spa.initModule( $('#spa') ); });
+  body
+    #spa
